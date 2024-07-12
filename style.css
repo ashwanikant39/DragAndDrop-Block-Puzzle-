@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.cell {
+  height: 35px;
+  width: 35px;
+  border: 1px solid gray;
+  cursor: pointer;
+  align-self: center;
+  justify-self: center;
+  border-radius: 2px;
+  margin: 1px;
+}
+.cells {
+  width: 62vw;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: repeat(25, auto);
+}
+.cell-clicked {
+  background-color: red;
+  cursor: auto;
+}
