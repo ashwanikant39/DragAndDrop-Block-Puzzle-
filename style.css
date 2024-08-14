@@ -3,23 +3,55 @@
   padding: 0;
   box-sizing: border-box;
 }
-.cell {
-  height: 35px;
-  width: 35px;
-  border: 1px solid gray;
-  cursor: pointer;
-  align-self: center;
-  justify-self: center;
-  border-radius: 2px;
-  margin: 1px;
-}
 .cells {
-  width: 62vw;
+  /* border: 2px solid red; */
+  width: 456px;
+  justify-items: center;
   margin: 10px auto;
   display: grid;
-  grid-template-columns: repeat(25, auto);
+  border-collapse: collapse;
+  grid-template-columns: repeat(10, 1fr);
 }
-.cell-clicked {
+.cell {
+  /* border-collapse: collapse; */
+  height: 45px;
+  width: 45px;
+  border: 1px solid rgb(221, 220, 220);
+  cursor: pointer;
+  border-radius: 1px;
+}
+.clicked-cell {
+  background-color: #7091e6;
+  cursor: default;
+}
+
+.puzzles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  margin: 70px auto;
+  border-bottom: 2px solid pink;
+  padding: 15px;
+  /* position: relative; */
+  /* box-shadow: 0px 2px 7px black; */
+}
+.puzzle {
+  /* border: 2px solid blue; */
+  height: 45px;
+  width: 45px;
+  background-color: #7091e6;
+  border-radius: 1px;
+  cursor: pointer;
+  /* position: absolute; */
+}
+.dragging {
+  background-color: #7091e6;
+  border-radius: 1px;
+}
+.puzzle2 {
   background-color: red;
-  cursor: auto;
+  height: 45px;
+  width: 45px;
+  /* z-index: 5; */
 }
